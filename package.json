@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm-run-all -p nodemon browsersync",
     "nodemon": "nodemon server.js",
-    "browsersync": "browser-sync start --proxy http://localhost:8080 --files 'public, views'"
+    "browsersync": "browser-sync start --proxy http://localhost:7070 --files 'public, views'"
   },
   "author": "",
   "license": "ISC",

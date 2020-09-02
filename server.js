@@ -1,8 +1,11 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
 const server = express();
+const routers = require('./routes')
 
 server.use(express.static('public'));
+
+server.use(routers)
 
 server.set("view engine", "njk");
 
@@ -16,7 +19,7 @@ server.get("/", function(req, res) {
     return res.render("layout");
 });
 
-server.listen(8080, function() {
+server.listen(7070, function() {
     console.log("server RUN!");
 });
 
