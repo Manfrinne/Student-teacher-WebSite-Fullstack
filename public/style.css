@@ -193,3 +193,36 @@ tbody tr td:last-child a,
 td:last-child {
   text-align: center;
 }
+
+/* CARD FORM */
+
+input, select {
+  width: 100%;
+  line-height: 28px;
+  outline: none;
+  background-color: var(--black-color);
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+
+input::placeholder {
+  font-size: 16px;
+  color: rgb(131, 125, 125);
+  font-weight: normal;
+}
+
+input[type="radio"] {
+  width: initial;
+  margin-right: 4px;
+}
+
+button[type="submit"] {
+  padding: 8px 16px;
+  background-color: limegreen;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 32px;
+}
