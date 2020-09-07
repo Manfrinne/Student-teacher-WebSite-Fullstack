@@ -1,1 +1,20 @@
-{"avatar_url":"https://www.ghfghfg22222","name":"Geovane","birth":"2000-11-02","academic_level":"doctorate","class_type":"on","disciplines":"Matemática"}
+{
+  "teachers": [
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+      "name": "Deletar User",
+      "birth": "2000-02-02",
+      "academic_level": "masters",
+      "class_type": "on",
+      "disciplines": "Matemática"
+    },
+    {
+      "avatar_url": "https://www.google.com",
+      "name": "Manfrinne Ferreira",
+      "birth": "2000-02-22",
+      "academic_level": "doctorate",
+      "class_type": "on",
+      "disciplines": "Matemática"
+    }
+  ]
+}

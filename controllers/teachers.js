@@ -1,5 +1,6 @@
 
 const fs = require('fs');
+const data = require('../data.json');
 
 exports.redirect = function(req, res) {
   return res.redirect("teachers");
@@ -21,7 +22,9 @@ exports.post = function(req, res) {
     };
   };
 
-  fs.writeFile("data.json", JSON.stringify(req.body), function(err) {
+  data.teachers.push(req.body);
+
+  fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
     if (err) {return res.send("ERRO AO ESCREVER O ARQUIVO!")};
   });
 
