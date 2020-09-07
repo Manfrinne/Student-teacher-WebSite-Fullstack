@@ -3,6 +3,8 @@ const nunjucks = require('nunjucks');
 const server = express();
 const routers = require('./routes');
 
+server.use(express.urlencoded({extended: true}));
+
 server.use(express.static('public'));
 
 server.use(routers);
