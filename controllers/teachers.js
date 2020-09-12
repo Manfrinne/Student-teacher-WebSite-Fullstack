@@ -7,7 +7,7 @@ exports.redirect = function(req, res) {
 };
 
 exports.index = function(req, res) {
-  return res.render("teachers/index");
+  return res.render("teachers/index", {teachers: data.teachers});
 };
 
 exports.create = function(req, res) {
@@ -45,4 +45,19 @@ exports.post = function(req, res) {
   });
 
   return res.redirect("teachers");
+};
+
+exports.show = function(req, res)  {
+  const {id} = req.params;
+
+  const foundIdTeachers = data.teachers.find(function(teachers) {
+    return teachers.id == id;
+  });
+  if (!foundIdTeachers) {return res.send("TEACHER NOT FOUND!")};
+
+  const teacher = {
+    ...foundIdTeachers
+  };
+
+  return res.render("teachers/show", {teacher});
 };

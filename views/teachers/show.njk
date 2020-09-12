@@ -3,13 +3,13 @@
 {% block content %}
 
 <div class="card">
-    <section class="avatar" style="background: url(https://source.unsplash.com/collection/1544061/500x500) "></section>
+    <section class="avatar" style="background: url({{teacher.avatar_url}}) "></section>
     <section class="information">
         <h3>Informações do Professor</h3>
 
         <div class="item">
             <div>Professor</div>
-            <div>Fernando Henrique</div>
+            <div>{{teacher.name}}</div>
         </div>
         <div class="item">
             <div>Idade</div>
@@ -39,3 +39,13 @@
 </div>
 
 {% endblock %}
+
+{#  avatar_url,
+    name,
+    birth,
+    academic_level,
+    class_type,
+    disciplines,
+    create_at,
+    id,
+ #}

@@ -12,15 +12,17 @@
         <th>Informações</th>
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <td>
-          <span style=""></span>Nome do Professor
-        </td>
-        <td>Matemática e Física</td>
-        <td><a href="teachers/show">Visualizar</a></td>
-      </tr>
-    </tbody>
+    {% for teacher in teachers %}
+      <tbody>
+        <tr>
+          <td>
+            <span style="background-image: url({{teacher.avatar_url}})"></span>Nome do Professor
+          </td>
+          <td>{{teacher.disciplines}}</td>
+          <td><a href="/teachers/{{teacher.id}}">Visualizar</a></td>
+        </tr>
+      </tbody>
+    {% endfor %}
   </table>
 </div>
 
