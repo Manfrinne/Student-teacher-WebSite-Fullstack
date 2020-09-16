@@ -1,6 +1,7 @@
 
 const fs = require('fs');
 const data = require('../data.json');
+const {age} = require('../utils.js');
 
 exports.redirect = function(req, res) {
   return res.redirect("teachers");
@@ -25,8 +26,8 @@ exports.post = function(req, res) {
     };
   };
 
-  create_at = Date.now(create_at);
   birth = Date.parse(birth);
+  create_at = Date.now(create_at);
   id = Number(data.teachers.length + 1);
 
   data.teachers.push({
@@ -56,7 +57,8 @@ exports.show = function(req, res)  {
   if (!foundIdTeachers) {return res.send("TEACHER NOT FOUND!")};
 
   const teacher = {
-    ...foundIdTeachers
+    ...foundIdTeachers,
+    age: age(foundIdTeachers.birth)
   };
 
   return res.render("teachers/show", {teacher});
