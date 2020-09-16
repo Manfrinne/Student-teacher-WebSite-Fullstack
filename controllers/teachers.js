@@ -61,3 +61,19 @@ exports.show = function(req, res)  {
 
   return res.render("teachers/show", {teacher});
 };
+
+exports.edit = function(req, res)  {
+  const {id} = req.params;
+
+  const foundIdTeachers = data.teachers.find(function(teachers) {
+    return teachers.id == id;
+  });
+  if (!foundIdTeachers) {return res.send("TEACHER NOT FOUND!")};
+
+  const teacher = {
+    ...foundIdTeachers
+  };
+
+  return res.render("teachers/edit", {teacher});
+};
+

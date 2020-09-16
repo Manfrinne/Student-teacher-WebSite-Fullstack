@@ -3,49 +3,40 @@
 {% block content %}
 
 <div class="card">
-    <section class="avatar" style="background: url({{teacher.avatar_url}}) "></section>
-    <section class="information">
-        <h3>Informações do Professor</h3>
+  <section class="avatar" style="background: url({{teacher.avatar_url}}) "></section>
+  <section class="information">
+      <h3>Informações do Professor</h3>
 
-        <div class="item">
-            <div>Professor</div>
-            <div>{{teacher.name}}</div>
-        </div>
-        <div class="item">
-            <div>Idade</div>
-            <div>25</div>
-        </div>
-        <div class="item">
-            <div>Nível Acadêmico</div>
-            <div>Doutorado</div>
-        </div>
-        <div class="item">
-            <div>Aulas</div>
-            <div>Presencial e EAD</div>
-        </div>
-        <div class="item">
-            <div>Disciplinas Ministradas</div>
-            <div>
-                <span>Matemática</span>
-                <span>Física</span>
-            </div>
-        </div>
-        <div class="item">
-            <div>Cadastrado na Plataforma</div>
-            <div>dd/mm/yyyy</div>
-        </div>
+      <div class="item">
+          <div>Professor</div>
+          <div>{{teacher.name}}</div>
+      </div>
+      <div class="item">
+          <div>Idade</div>
+          <div>25</div>
+      </div>
+      <div class="item">
+          <div>Nível Acadêmico</div>
+          <div>Doutorado</div>
+      </div>
+      <div class="item">
+          <div>Aulas</div>
+          <div>Presencial e EAD</div>
+      </div>
+      <div class="item">
+          <div>Disciplinas Ministradas</div>
+          <div>
+              <span>Matemática</span>
+              <span>Física</span>
+          </div>
+      </div>
+      <div class="item">
+          <div>Cadastrado na Plataforma</div>
+          <div>dd/mm/yyyy</div>
+      </div>
+      <a href="/teachers/{{teacher.id}}/edit" class="button">Editar</a>
 
-    </section>
+  </section>
 </div>
 
 {% endblock %}
-
-{#  avatar_url,
-    name,
-    birth,
-    academic_level,
-    class_type,
-    disciplines,
-    create_at,
-    id,
- #}

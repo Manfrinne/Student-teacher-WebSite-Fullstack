@@ -2,7 +2,7 @@
 
 :root {
     --yellow-color: #ffe100d8;
-    --black-color: rgb(32, 32, 36);
+    --black-color: #202024;
 }
 
 * {
@@ -217,7 +217,7 @@ input[type="radio"] {
   margin-right: 4px;
 }
 
-button[type="submit"] {
+button[type="submit"], a.button {
   padding: 8px 16px;
   background-color: limegreen;
   font-size: 16px;
@@ -225,4 +225,12 @@ button[type="submit"] {
   width: 100%;
   border-radius: 8px;
   margin-top: 32px;
+}
+
+a.button {
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
 }
