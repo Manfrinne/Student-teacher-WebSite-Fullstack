@@ -18,7 +18,7 @@ exports.create = function(req, res) {
 exports.post = function(req, res) {
   const keys = Object.keys(req.body);
 
-  let {avatar_url, name, birth, academic_level, class_type, disciplines, create_at, id} = req.body;
+  let {avatar_url, name, birth, academic_level, class_type, disciplines, create_at} = req.body;
 
   for (key of keys) {
     if (req.body[key] == "") {
@@ -28,7 +28,11 @@ exports.post = function(req, res) {
 
   birth = Date.parse(birth);
   create_at = Date.now(create_at);
-  id = Number(data.teachers.length + 1);
+  let id = 1;
+  const lastId = data.teachers[data.teachers.length - 1];
+  if (lastId) {
+    id = lastId.id + 1;
+  };
 
   data.teachers.push({
     avatar_url,
