@@ -1,7 +1,7 @@
 
 const fs = require('fs');
 const data = require('../data.json');
-const {age} = require('../utils.js');
+const {age, date, academic_level, dateBirth} = require('../utils.js');
 
 exports.redirect = function(req, res) {
   return res.redirect("teachers");
@@ -27,12 +27,10 @@ exports.post = function(req, res) {
   };
 
   birth = Date.parse(birth);
-  create_at = Date.now(create_at);
+  create_at = Date.now();
   let id = 1;
   const lastId = data.teachers[data.teachers.length - 1];
-  if (lastId) {
-    id = lastId.id + 1;
-  };
+  if (lastId) {id = lastId.id + 1};
 
   data.teachers.push({
     avatar_url,
@@ -62,7 +60,10 @@ exports.show = function(req, res)  {
 
   const teacher = {
     ...foundIdTeachers,
-    age: age(foundIdTeachers.birth)
+    age: age(foundIdTeachers.birth),
+    disciplines: foundIdTeachers.disciplines.split(","),
+    create_at: date(foundIdTeachers.create_at),
+    academic_level: academic_level(foundIdTeachers.academic_level)
   };
 
   return res.render("teachers/show", {teacher});
@@ -77,7 +78,8 @@ exports.edit = function(req, res)  {
   if (!foundIdTeachers) {return res.send("TEACHER NOT FOUND!")};
 
   const teacher = {
-    ...foundIdTeachers
+    ...foundIdTeachers,
+    birth: dateBirth(foundIdTeachers.birth)
   };
 
   return res.render("teachers/edit", {teacher});

@@ -13,7 +13,7 @@
         <div class="item">
             <div>Nascimento</div>
             <div>
-              <input type="date" name="birth" value="">
+              <input type="date" name="birth" value="{{teacher.birth}}">
             </div>
         </div>
         <div class="item">
@@ -29,14 +29,14 @@
         <div class="item">
             <div>Aulas</div>
             <div>
-              <span><input type="radio" name="class_type">Presencial</span>
-              <span><input type="radio" name="class_type">EAD</span>
+              <span><input value="Presencial" type="radio" name="class_type">Presencial</span>
+              <span><input value="EAD" type="radio" name="class_type">EAD</span>
             </div>
         </div>
         <div class="item">
             <div>Disciplinas Ministradas</div>
             <div>
-              <input type="text" name="disciplines" placeholder="Separe suas disciplinas com vírgula">
+              <input type="text" name="disciplines" placeholder="Separe suas disciplinas com vírgula" value="{{teacher.disciplines}}">
             </div>
         </div>
 

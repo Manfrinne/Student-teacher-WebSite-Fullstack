@@ -227,6 +227,11 @@ button[type="submit"], a.button {
   margin-top: 32px;
 }
 
+#form-delete button[type="submit"] {
+  margin-top: 8px;
+  background-color: rgb(235, 140, 140);
+}
+
 a.button {
   box-sizing: border-box;
   display: block;
