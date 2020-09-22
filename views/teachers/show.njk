@@ -21,7 +21,8 @@
       </div>
       <div class="item">
           <div>Aulas</div>
-          <div>Presencial e EAD</div>
+          <div>{{"Presencial" if teacher.class_type === "P"
+            else "EAD"}}</div>
       </div>
       <div class="item">
           <div>Disciplinas Ministradas</div>

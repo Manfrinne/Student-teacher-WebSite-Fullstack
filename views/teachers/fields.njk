@@ -29,8 +29,10 @@
         <div class="item">
             <div>Aulas</div>
             <div>
-              <span><input value="Presencial" type="radio" name="class_type">Presencial</span>
-              <span><input value="EAD" type="radio" name="class_type">EAD</span>
+              <span><input type="radio" name="class_type" value="P"
+              {% if teacher.class_type === "P" %} checked {% endif %}>Presencial</span>
+              <span><input type="radio" name="class_type" value="E"
+              {% if teacher.class_type === "E" %} checked {% endif %}>EAD</span>
             </div>
         </div>
         <div class="item">
