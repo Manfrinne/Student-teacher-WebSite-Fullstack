@@ -5,7 +5,7 @@
 <div class="card">
   <section class="avatar" style="background: url({{teacher.avatar_url}}) no-repeat center center / cover"></section>
   <section class="information">
-    <form method="POST" action="/teachers?_method=PUT">
+    <form method="POST" action="/teachers">
 
       <h3>Editar Professor</h3>
 
@@ -14,7 +14,7 @@
       <input type="hidden" name="id" value="teachers/{{teacher.id}}">
 
     </form>
-    <form id="form-delete" method="POST" action="/teachers?_method=DELETE">
+    <form id="form-delete" method="POST" action="/teachers">
         <input type="hidden" name="id" value={{teacher.id}}>
         <button type="submit">Deletar</button>
     </form>
