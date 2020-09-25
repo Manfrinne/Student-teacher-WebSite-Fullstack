@@ -101,7 +101,8 @@ exports.update = function(req, res) {
   const teacher = {
     ...foundIdTeachers,
     ... req.body,
-    birth: dateBirth(foundIdTeachers.birth)
+    birth: dateBirth(foundIdTeachers.birth),
+    id: Number(req.body.id)
   };
 
   data.teachers[index] = teacher;
