@@ -114,3 +114,18 @@ exports.update = function(req, res) {
   });
 };
 
+exports.delete = function(req, res) {
+  const {id} = req.body;
+
+  const filterIdteacher = data.teachers.filter(function(teacher) {
+    if (teacher.id != id) {return true};
+  });
+
+  data.teachers = filterIdteacher;
+
+  fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
+    if (err) {return res.send("ERRO AO DELETAR O ARQUIVO!")};
+
+    return res.redirect("teachers");
+  });
+};
