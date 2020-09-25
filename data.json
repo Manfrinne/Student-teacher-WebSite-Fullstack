@@ -1,3 +1,14 @@
 {
-  "teachers": []
+  "teachers": [
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+      "name": "Testing Edit Page",
+      "birth": 1107216000000,
+      "academic_level": "university",
+      "class_type": "P",
+      "disciplines": "HTML, CSS",
+      "create_at": 1601002126701,
+      "id": 1
+    }
+  ]
 }
