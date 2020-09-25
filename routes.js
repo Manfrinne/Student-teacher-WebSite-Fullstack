@@ -9,7 +9,7 @@ routes.post("/teachers", teachers.post);
 routes.put("/teachers", teachers.update);
 routes.delete("/teachers", teachers.delete);
 routes.get("/teachers/:id", teachers.show);
-routes.get('/teachers/:id/edit', teachers.edit);
+routes.get("/teachers/:id/edit", teachers.edit);
 
 
 

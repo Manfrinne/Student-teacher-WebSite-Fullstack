@@ -34,7 +34,7 @@ module.exports = {
 
   academic_level: function academic_level(srt) {
     if (srt === "university") {
-      srt = "Ensino Superior"
+      srt = "Ensino Superior Completo"
     };
     if (srt === "masters") {
       srt = "Mestrado Completo"
