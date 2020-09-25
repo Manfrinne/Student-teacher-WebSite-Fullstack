@@ -2,25 +2,24 @@
 
 {% block content %}
 
-<div class="card">
+<form class="card" method="POST" action="/teachers?_method=PUT">
   <section class="avatar" style="background: url({{teacher.avatar_url}}) no-repeat center center / cover"></section>
+
   <section class="information">
-    <form method="POST" action="/teachers">
 
-      <h3>Editar Professor</h3>
+    <h3>Editar Professor</h3>
 
-      {% include "teachers/fields.njk" %}
+    {% include "teachers/fields.njk" %}
 
-      <input type="hidden" name="id" value="teachers/{{teacher.id}}">
-
-    </form>
-    <form id="form-delete" method="POST" action="/teachers">
-        <input type="hidden" name="id" value={{teacher.id}}>
-        <button type="submit">Deletar</button>
-    </form>
+    {# input type="hidden ==> para trazer o id" #}
+    <input type="hidden" name="id" value="{{teacher.id}}">
   </section>
+</form>
 
-</div>
+{# <form id="form-delete" method="POST" action="/teachers">
+    <input type="hidden" name="id" value={{teacher.id}}>
+    <button type="submit">Deletar</button>
+</form> #}
 
 {% endblock %}
 
