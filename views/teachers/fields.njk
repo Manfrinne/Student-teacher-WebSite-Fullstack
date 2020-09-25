@@ -20,9 +20,9 @@
             <div>Nível Acadêmico</div>
             <div>
               <select name="academic_level">
-                <option value="university">Graduação</option>
-                <option value="masters">Mestrado</option>
-                <option value="doctorate">Doutorado</option>
+                <option value="university" {% if teacher.academic_level === "university" %} selected {% endif %}>Graduação</option>
+                <option value="masters" {% if teacher.academic_level === "masters" %} selected {% endif %}>Mestrado</option>
+                <option value="doctorate" {% if teacher.academic_level === "doctorate" %} selected {% endif %}>Doutorado</option>
               </select>
             </div>
         </div>
