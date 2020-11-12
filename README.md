@@ -7,9 +7,6 @@ Esse é o desafio para criação de um site de aulas particulares. A ideia é qu
  ## Tecnologias e ferramentas:
 
  <ul>
-  <li>Javascript</li>
-  <li>HTML</li>
-  <li>CSS</li>
   <li>NodeJS</li>
   <li>Nodemon</li>
   <li>Express</li>

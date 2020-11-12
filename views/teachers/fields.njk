@@ -1,45 +1,45 @@
- <div class="item">
-            <div>Avatar URL</div>
-            <div>
-              <input type="url" name="avatar_url" placeholder="http://" value="{{teacher.avatar_url}}">
-            </div>
-        </div>
-        <div class="item">
-            <div>Nome</div>
-            <div>
-              <input type="text" name="name" placeholder="Nome completo" value="{{teacher.name}}">
-            </div>
-        </div>
-        <div class="item">
-            <div>Nascimento</div>
-            <div>
-              <input type="date" name="birth" value="{{teacher.birth}}">
-            </div>
-        </div>
-        <div class="item">
-            <div>Nível Acadêmico</div>
-            <div>
-              <select name="academic_level">
-                <option value="university" {% if teacher.academic_level === "university" %} selected {% endif %}>Graduação</option>
-                <option value="masters" {% if teacher.academic_level === "masters" %} selected {% endif %}>Mestrado</option>
-                <option value="doctorate" {% if teacher.academic_level === "doctorate" %} selected {% endif %}>Doutorado</option>
-              </select>
-            </div>
-        </div>
-        <div class="item">
-            <div>Aulas</div>
-            <div>
-              <span><input type="radio" name="class_type" value="P"
-              {% if teacher.class_type === "P" %} checked {% endif %}>Presencial</span>
-              <span><input type="radio" name="class_type" value="E"
-              {% if teacher.class_type === "E" %} checked {% endif %}>EAD</span>
-            </div>
-        </div>
-        <div class="item">
-            <div>Disciplinas Ministradas</div>
-            <div>
-              <input type="text" name="disciplines" placeholder="Separe suas disciplinas com vírgula" value="{{teacher.disciplines}}">
-            </div>
-        </div>
+<div class="item">
+    <div>Avatar URL</div>
+    <div>
+      <input type="url" name="avatar_url" placeholder="http://" value="{{teacher.avatar_url}}">
+    </div>
+</div>
+<div class="item">
+    <div>Nome</div>
+    <div>
+      <input type="text" name="name" placeholder="Nome completo" value="{{teacher.name}}">
+    </div>
+</div>
+<div class="item">
+    <div>Nascimento</div>
+    <div>
+      <input type="date" name="birth" value="{{teacher.birth}}">
+    </div>
+</div>
+<div class="item">
+    <div>Nível Acadêmico</div>
+    <div>
+      <select name="academic_level">
+        <option value="university" {% if teacher.academic_level === "university" %} selected {% endif %}>Graduação</option>
+        <option value="masters" {% if teacher.academic_level === "masters" %} selected {% endif %}>Mestrado</option>
+        <option value="doctorate" {% if teacher.academic_level === "doctorate" %} selected {% endif %}>Doutorado</option>
+      </select>
+    </div>
+</div>
+<div class="item">
+    <div>Aulas</div>
+    <div>
+      <span><input type="radio" name="class_type" value="P"
+      {% if teacher.class_type === "P" %} checked {% endif %}>Presencial</span>
+      <span><input type="radio" name="class_type" value="E"
+      {% if teacher.class_type === "E" %} checked {% endif %}>EAD</span>
+    </div>
+</div>
+<div class="item">
+    <div>Disciplinas Ministradas</div>
+    <div>
+      <input type="text" name="disciplines" placeholder="Separe suas disciplinas com vírgula" value="{{teacher.disciplines}}">
+    </div>
+</div>
 
 

@@ -14,57 +14,54 @@ module.exports = {
   },
 
   date: function date(timestamp) {
-    let today = new Date(timestamp);
-    let dd = today.getDate();
-    let mm = today.getMonth()+1;
-    let yyyy = today.getFullYear();
+    let today = new Date(timestamp) 
+    let dd = today.getDate() 
+    let mm = today.getMonth()+1 
+    let yyyy = today.getFullYear() 
 
     if (dd < 10) {
-        dd = `0${dd}`;
-    };
+        dd = `0${dd}` 
+    } 
 
     if (mm < 10) {
-        mm = `0${mm}`;
-    };
+        mm = `0${mm}` 
+    } 
 
-    today = `${dd}/${mm}/${yyyy}`;
+    today = `${dd}/${mm}/${yyyy}` 
 
-    return today;
+    return today 
   },
 
   academic_level: function academic_level(srt) {
     if (srt === "university") {
       srt = "Ensino Superior Completo"
-    };
+    } 
     if (srt === "masters") {
       srt = "Mestrado Completo"
-    };
+    } 
     if (srt === "doctorate") {
       srt = "Doutorado Completo"
-    };
+    } 
 
-    return srt;
+    return srt 
   },
 
   dateBirth: function dateBirth(timestamp) {
-    let today = new Date(timestamp);
-    let dd = today.getDate();
-    let mm = today.getMonth()+1;
-    let yyyy = today.getFullYear();
+    let today = new Date(timestamp) 
+    let dd = today.getDate() 
+    let mm = today.getMonth()+1 
+    let yyyy = today.getFullYear() 
 
     if (dd < 10) {
-        dd = `0${dd}`;
-    };
+        dd = `0${dd}` 
+    } 
 
     if (mm < 10) {
-        mm = `0${mm}`;
-    };
+        mm = `0${mm}` 
+    } 
 
-    today = `${yyyy}-${mm}-${dd}`;
+    today = `${yyyy}-${mm}-${dd}` 
 
-    return today;
+    return today 
   },
-};
-
-
-
+} 
