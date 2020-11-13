@@ -3,42 +3,54 @@
     {
       "avatar_url": "https://images.unsplash.com/photo-1595349393900-d34580c180af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
       "name": "Manfrinne Ferreira ",
-      "birth": 1107043200000,
+      "birth": 475804800000,
       "academic_level": "doctorate",
       "class_type": "P",
-      "disciplines": "NodeJS, Fullstack Developer",
+      "disciplines": "NodeJS, Web Development, Linux",
       "create_at": 1604715794243,
       "id": 7
     },
     {
       "avatar_url": "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-      "name": "Lab-01545dasdasdasds",
-      "birth": 319939200000,
+      "name": "Natasha Cardoso dos Santos",
+      "birth": 793238400000,
       "academic_level": "masters",
-      "class_type": "P",
-      "disciplines": "Matemática, EDIT PAGE",
+      "class_type": "E",
+      "disciplines": "Matemática, Teoria Computacional, Algoritmos",
       "create_at": 1604717515547,
       "id": 8
     },
     {
       "avatar_url": "https://images.unsplash.com/photo-1595455661762-31c2975417df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      "name": "Cassiano Borges",
-      "birth": 599356800000,
-      "academic_level": "doctorate",
-      "class_type": "E",
-      "disciplines": "Filosofia, Sociologia, História",
-      "create_at": 1604717584815,
-      "id": 9
-    },
-    {
-      "avatar_url": "https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      "name": "Manfrinne Ferreira de Sousa",
-      "birth": 976492800000,
-      "academic_level": "doctorate",
+      "name": "Marcia Andrade",
+      "birth": 977961600000,
+      "academic_level": "university",
       "class_type": "E",
       "disciplines": "HTML, CSS, JavaScript",
-      "create_at": 1604719175703,
-      "id": 10
+      "create_at": 1604717584815,
+      "id": 9
+    }
+  ],
+  "students": [
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1516534775068-ba3e7458af70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "Tesália Soares ",
+      "birth": 1024012800000,
+      "academic_level": "university",
+      "class_type": "E",
+      "disciplines": "Matemática, Lógica",
+      "create_at": 1605236179739,
+      "id": 1
+    },
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "Tesália Soares ",
+      "birth": 1023926400000,
+      "academic_level": "university",
+      "class_type": "E",
+      "disciplines": "Lógica, Rede de Computadores",
+      "create_at": 1605236179739,
+      "id": 2
     }
   ]
 }

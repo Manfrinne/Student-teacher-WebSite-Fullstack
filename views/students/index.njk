@@ -1,0 +1,29 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+<div class="card table-container">
+  <a href="/students/create">Novo</a>
+  <table width="100%">
+    <thead>
+      <tr>
+        <th>Estudante</th>
+        <th>Disciplinas</th>
+        <th>Informações</th>
+      </tr>
+    </thead>
+    {% for student in students %}
+      <tbody>
+        <tr>
+          <td>
+            <span style="background-image: url({{student.avatar_url}})"></span>{{student.name}}
+          </td>
+          <td>{{student.disciplines}}</td>
+          <td><a href="/students/{{student.id}}">Visualizar</a></td>
+        </tr>
+      </tbody>
+    {% endfor %}
+  </table>
+</div>
+
+{% endblock %}

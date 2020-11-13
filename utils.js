@@ -60,7 +60,7 @@ module.exports = {
         mm = `0${mm}` 
     } 
 
-    today = `${yyyy}-${mm}-${dd}` 
+    today = `${yyyy}-${mm}-${dd}` //return do tipo 'ISO'
 
     return today 
   },
