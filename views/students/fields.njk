@@ -16,30 +16,36 @@
       <input type="date" name="birth" value="{{student.birth}}">
     </div>
 </div>
+
 <div class="item">
-    <div>Nível Acadêmico</div>
+    <div>Email</div>
     <div>
-      <select name="academic_level">
-        <option value="university" {% if student.academic_level === "university" %} selected {% endif %}>Graduação</option>
-        <option value="masters" {% if student.academic_level === "masters" %} selected {% endif %}>Mestrado</option>
-        <option value="doctorate" {% if student.academic_level === "doctorate" %} selected {% endif %}>Doutorado</option>
+      <input type="email" name="email" value="{{student.email}}">
+    </div>
+</div>
+
+<div class="item">
+    <div>Ano Escolar</div>
+    <div>
+      <select name="school_year">
+        <option value="5EF" {% if school-year === "5EF" %} selected {% endif %}> 5º Ano do Ensino Fundamental</option>
+        <option value="6EF" {% if school-year === "6EF" %} selected {% endif %}> 6º Ano do Ensino Fundamental</option>
+        <option value="7EF" {% if school-year === "7EF" %} selected {% endif %}> 7º Ano do Ensino Fundamental</option>
+        <option value="8EF" {% if school-year === "8EF" %} selected {% endif %}> 8º Ano do Ensino Fundamental</option>
+        <option value="9EF" {% if school-year === "9EF" %} selected {% endif %}> 9º Ano do Ensino Fundamental</option>
+        <option value="1EM" {% if school-year === "1EM" %} selected {% endif %}> 1º Ano do Ensino Médio</option>
+        <option value="2EM" {% if school-year === "2EM" %} selected {% endif %}> 2º Ano do Ensino Médio</option>
+        <option value="3EM" {% if school-year === "3EM" %} selected {% endif %}> 3º Ano do Ensino Médio</option>
       </select>
     </div>
 </div>
+
 <div class="item">
-    <div>Aulas</div>
+    <div>Carga Horária Semanal</div>
     <div>
-      <span><input type="radio" name="class_type" value="P"
-      {% if student.class_type === "P" %} checked {% endif %}>Presencial</span>
-      <span><input type="radio" name="class_type" value="E"
-      {% if student.class_type === "E" %} checked {% endif %}>EAD</span>
+      <input type="number" name="hours_week" value="{{student.hours_week}}">
     </div>
 </div>
-<div class="item">
-    <div>Disciplinas Ministradas</div>
-    <div>
-      <input type="text" name="disciplines" placeholder="Separe suas disciplinas com vírgula" value="{{student.disciplines}}">
-    </div>
-</div>
+
 
 

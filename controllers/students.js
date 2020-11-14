@@ -21,7 +21,7 @@ exports.post = function(req, res) {
   //acessar as propriedades sem pegar os valores
   const keys = Object.keys(req.body) 
 
-  let {avatar_url, name, birth, academic_level, class_type, disciplines, create_at} = req.body 
+  let {avatar_url, name, birth, school_year, email, hours_week} = req.body 
 
   //Fazer uma autenticação
   for (key of keys) {
@@ -33,7 +33,6 @@ exports.post = function(req, res) {
   //Modificar os valores das variáveis
   //para formatação de Datas
   birth = Date.parse(birth) 
-  create_at = Date.now() 
 
   //Determinar variável para identificação
   //de um objeto específico
@@ -46,11 +45,10 @@ exports.post = function(req, res) {
     avatar_url,
     name,
     birth,
-    academic_level,
-    class_type,
-    disciplines,
-    create_at,
-    id,
+    school_year,
+    email,
+    hours_week,
+    id
   }) 
 
   fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {

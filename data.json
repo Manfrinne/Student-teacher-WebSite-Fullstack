@@ -33,24 +33,13 @@
   ],
   "students": [
     {
-      "avatar_url": "https://images.unsplash.com/photo-1516534775068-ba3e7458af70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      "name": "Tesália Soares ",
-      "birth": 1024012800000,
-      "academic_level": "university",
-      "class_type": "E",
-      "disciplines": "Matemática, Lógica",
-      "create_at": 1605236179739,
+      "avatar_url": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "Patrícia Fernandes",
+      "birth": 912816000000,
+      "school_year": "5EF",
+      "email": "testando@gmail.com",
+      "hours_week": "20",
       "id": 1
-    },
-    {
-      "avatar_url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      "name": "Tesália Soares ",
-      "birth": 1023926400000,
-      "academic_level": "university",
-      "class_type": "E",
-      "disciplines": "Lógica, Rede de Computadores",
-      "create_at": 1605236179739,
-      "id": 2
     }
   ]
 }
