@@ -14,22 +14,15 @@ module.exports = {
   },
 
   date: function date(timestamp) {
-    let today = new Date(timestamp) 
-    let dd = today.getDate() 
-    let mm = today.getMonth()+1 
-    let yyyy = today.getFullYear() 
+    const date = new Date(timestamp)
+    const year = date.getUTCFullYear()
+    const month = `0${date.getUTCMonth() + 1}`.slice(-2)
+    const day = `0${date.getUTCDate()}`.slice(-2) 
 
-    if (dd < 10) {
-        dd = `0${dd}` 
-    } 
-
-    if (mm < 10) {
-        mm = `0${mm}` 
-    } 
-
-    today = `${dd}/${mm}/${yyyy}` 
-
-    return today 
+    return {
+      iso:`${year}-${month}-${day}`,
+      birthDay: `${day}/${month}`
+    }
   },
 
   academic_level: function academic_level(srt) {
@@ -45,24 +38,32 @@ module.exports = {
 
     return srt 
   },
-
-  dateBirth: function dateBirth(timestamp) {
-    let today = new Date(timestamp) 
-    let dd = today.getDate() 
-    let mm = today.getMonth()+1 
-    let yyyy = today.getFullYear() 
-
-    if (dd < 10) {
-        dd = `0${dd}` 
+  grade: function grade(srt) {
+    if (srt === "5EF") {
+      srt = "5º Ano do Ensino Fundamental"
+    }
+    if (srt === "6EF") {
+      srt = "6º Ano do Ensino Fundamental"
     } 
-
-    if (mm < 10) {
-        mm = `0${mm}` 
+    if (srt === "7EF") {
+      srt = "7º Ano do Ensino Fundamental"
     } 
-
-    today = `${yyyy}-${mm}-${dd}` //return do tipo 'ISO'
+    if (srt === "8EF") {
+      srt = "8º Ano do Ensino Fundamental"
+    }
+    if (srt === "9EF") {
+      srt = "9º Ano do Ensino Fundamental"
+    }
+    if (srt === "1EM") {
+      srt = "1º Ano do Ensino Médio"
+    }
+    if (srt === "2EM") {
+      srt = "2º Ano do Ensino Médio"
+    }
+    if (srt === "3EM") {
+      srt = "3º Ano do Ensino Médio"
+    }
     
-
-    return today 
-  },
+    return srt 
+  }
 } 

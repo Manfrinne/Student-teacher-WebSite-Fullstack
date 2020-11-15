@@ -1,7 +1,7 @@
 
 const fs = require('fs') 
 const data = require('../data.json') 
-const {age, date, dateBirth} = require('../utils.js') 
+const {age, date, grade} = require('../utils.js') 
 
 exports.redirect = function(req, res) {
   return res.redirect("students") 
@@ -69,6 +69,8 @@ exports.show = function(req, res)  {
   const student = {
     ...foundIdstudents, //spread
     age: age(foundIdstudents.birth),
+    birthDay: date(foundIdstudents.birth).birthDay,
+    school_year: grade(foundIdstudents.school_year)
   } 
 
   return res.render("students/show", {student}) 
@@ -82,10 +84,12 @@ exports.edit = function(req, res)  {
   }) 
   if (!foundIdstudents) {return res.send("student NOT FOUND!")} 
 
+  school_year = (grade(foundIdstudents.school_year))
+
   const student = {
     ...foundIdstudents,
-    birth: dateBirth(foundIdstudents.birth)
-  } 
+    birth: date(foundIdstudents.birth).iso,
+  }
 
   return res.render("students/edit", {student}) 
 } 

@@ -36,10 +36,19 @@
       "avatar_url": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
       "name": "Patrícia Fernandes",
       "birth": 912816000000,
-      "school_year": "5EF",
+      "school_year": "8EF",
       "email": "testando@gmail.com",
       "hours_week": "20",
       "id": 1
+    },
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1587919275665-ac4ab3ccd753?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "Leticia Espindola",
+      "birth": 1129766400000,
+      "school_year": "3EM",
+      "email": "leticiaemailtest@email.com",
+      "hours_week": "40",
+      "id": 2
     }
   ]
 }

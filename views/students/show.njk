@@ -16,21 +16,20 @@
           <div>{{student.age}}</div>
       </div>
       <div class="item">
-          <div>Nível Acadêmico</div>
-          <div>{{student.academic_level}}</div>
+          <div>Aniversário</div>
+          <div>{{student.birthDay}}</div>
       </div>
       <div class="item">
-          <div>Aulas</div>
-          <div>{{"Presencial" if student.class_type === "P"
-            else "EAD"}}</div>
+          <div>Email</div>
+          <div>{{student.email}}</div>
       </div>
       <div class="item">
-          <div>Disciplinas Ministradas</div>
-          <div>
-            {% for discipline in student.disciplines %}
-              <span> {{discipline}} </span>
-            {% endfor %}
-          </div>
+          <div>Período Escolar</div>
+          <div>{{student.school_year}}</div>
+      </div>
+       <div class="item">
+          <div>Carga Horária Semanal</div>
+          <div>{{student.hours_week}}</div>
       </div>
       <a href="/students/{{student.id}}/edit" class="button">Editar</a>
 

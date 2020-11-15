@@ -1,7 +1,7 @@
 
 const fs = require('fs') 
 const data = require('../data.json') 
-const {age, date, academic_level, dateBirth} = require('../utils.js') 
+const {age, date, academic_level} = require('../utils.js') 
 
 exports.redirect = function(req, res) {
   return res.redirect("teachers") 
@@ -21,7 +21,7 @@ exports.post = function(req, res) {
   //acessar as propriedades sem pegar os valores
   const keys = Object.keys(req.body) 
 
-  let {avatar_url, name, birth, academic_level, class_type, disciplines, create_at} = req.body 
+  let {avatar_url, name, birth, academic_level, class_type, disciplines} = req.body 
 
   //Fazer uma autenticação
   for (key of keys) {
@@ -33,7 +33,7 @@ exports.post = function(req, res) {
   //Modificar os valores das variáveis
   //para formatação de Datas
   birth = Date.parse(birth) 
-  create_at = Date.now() 
+  const create_at = Date.now() 
 
   //Determinar variável para identificação
   //de um objeto específico
@@ -72,7 +72,7 @@ exports.show = function(req, res)  {
     ...foundIdTeachers, //spread
     age: age(foundIdTeachers.birth),
     disciplines: foundIdTeachers.disciplines.split(","),
-    create_at: date(foundIdTeachers.create_at),
+    create_at: new Intl.DateTimeFormat('pt-BR').format(foundIdTeachers.create_at),
     academic_level: academic_level(foundIdTeachers.academic_level)
   } 
 
@@ -89,7 +89,7 @@ exports.edit = function(req, res)  {
 
   const teacher = {
     ...foundIdTeachers,
-    birth: dateBirth(foundIdTeachers.birth)
+    birth: date(foundIdTeachers.birth).iso
   } 
 
   return res.render("teachers/edit", {teacher}) 
