@@ -1,7 +1,7 @@
 
 const fs = require('fs') 
 const data = require('../data.json') 
-const {age, date, academic_level, dateBirth} = require('../utils.js') 
+const {age, date, dateBirth} = require('../utils.js') 
 
 exports.redirect = function(req, res) {
   return res.redirect("students") 
@@ -69,9 +69,6 @@ exports.show = function(req, res)  {
   const student = {
     ...foundIdstudents, //spread
     age: age(foundIdstudents.birth),
-    disciplines: foundIdstudents.disciplines.split(","),
-    create_at: date(foundIdstudents.create_at),
-    academic_level: academic_level(foundIdstudents.academic_level)
   } 
 
   return res.render("students/show", {student}) 
