@@ -8,6 +8,8 @@
     <thead>
       <tr>
         <th>Estudante</th>
+        <th>Email</th>
+        <th>Ano Escolar</th>
         <th>Informações</th>
       </tr>
     </thead>
@@ -17,6 +19,8 @@
           <td>
             <span style="background-image: url({{student.avatar_url}})"></span>{{student.name}}
           </td>
+          <td>{{student.email}}</td>
+          <td>{{student.school_year}}</td>
           <td><a href="/students/{{student.id}}">Visualizar</a></td>
         </tr>
       </tbody>

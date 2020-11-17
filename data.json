@@ -1,16 +1,6 @@
 {
   "teachers": [
     {
-      "avatar_url": "https://images.unsplash.com/photo-1595349393900-d34580c180af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
-      "name": "Manfrinne Ferreira ",
-      "birth": 475804800000,
-      "academic_level": "doctorate",
-      "class_type": "P",
-      "disciplines": "NodeJS, Web Development, Linux",
-      "create_at": 1604715794243,
-      "id": 7
-    },
-    {
       "avatar_url": "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       "name": "Natasha Cardoso dos Santos",
       "birth": 793238400000,
@@ -33,15 +23,6 @@
   ],
   "students": [
     {
-      "avatar_url": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      "name": "Patrícia Fernandes",
-      "birth": 912816000000,
-      "school_year": "8EF",
-      "email": "testando@gmail.com",
-      "hours_week": "20",
-      "id": 1
-    },
-    {
       "avatar_url": "https://images.unsplash.com/photo-1587919275665-ac4ab3ccd753?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
       "name": "Leticia Espindola",
       "birth": 1129766400000,
@@ -49,6 +30,15 @@
       "email": "leticiaemailtest@email.com",
       "hours_week": "40",
       "id": 2
+    },
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1595455661762-31c2975417df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "Geovane Carvalho",
+      "birth": 946598400000,
+      "school_year": "1EM",
+      "email": "Manfrinne@gmail",
+      "hours_week": "25",
+      "id": 3
     }
   ]
 }

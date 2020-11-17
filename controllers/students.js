@@ -7,7 +7,7 @@ exports.redirect = function(req, res) {
   return res.redirect("students") 
 } 
 
-exports.index = function(req, res) {
+exports.index = function(req, res) {  
   return res.render("students/index", {students: data.students}) 
 } 
 
