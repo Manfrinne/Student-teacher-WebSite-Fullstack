@@ -23,22 +23,22 @@
   ],
   "students": [
     {
-      "avatar_url": "https://images.unsplash.com/photo-1587919275665-ac4ab3ccd753?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      "name": "Leticia Espindola",
-      "birth": 1129766400000,
-      "school_year": "3EM",
-      "email": "leticiaemailtest@email.com",
-      "hours_week": "40",
-      "id": 2
+      "avatar_url": "https://images.unsplash.com/photo-1595455661762-31c2975417df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "Manfrinne Ferreira de Sousa",
+      "birth": 598665600000,
+      "school_year": "2º Ano do Ensino Médio",
+      "email": "m4nfrinne@gmail.com",
+      "hours_week": "30",
+      "id": 1
     },
     {
-      "avatar_url": "https://images.unsplash.com/photo-1595455661762-31c2975417df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "avatar_url": "https://images.unsplash.com/photo-1595349393900-d34580c180af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
       "name": "Geovane Carvalho",
-      "birth": 946598400000,
-      "school_year": "1EM",
-      "email": "Manfrinne@gmail",
-      "hours_week": "25",
-      "id": 3
+      "birth": 582336000000,
+      "school_year": "3º Ano do Ensino Médio",
+      "email": "m4nfrinne@gmail.com",
+      "hours_week": "15",
+      "id": 2
     }
   ]
 }

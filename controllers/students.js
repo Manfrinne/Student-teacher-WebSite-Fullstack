@@ -7,7 +7,7 @@ exports.redirect = function(req, res) {
   return res.redirect("students") 
 } 
 
-exports.index = function(req, res) {  
+exports.index = function(req, res) {
   return res.render("students/index", {students: data.students}) 
 } 
 
@@ -33,6 +33,8 @@ exports.post = function(req, res) {
   //Modificar os valores das variáveis
   //para formatação de Datas
   birth = Date.parse(birth) 
+
+  school_year = grade(school_year)
 
   //Determinar variável para identificação
   //de um objeto específico
@@ -70,7 +72,6 @@ exports.show = function(req, res)  {
     ...foundIdstudents, //spread
     age: age(foundIdstudents.birth),
     birthDay: date(foundIdstudents.birth).birthDay,
-    school_year: grade(foundIdstudents.school_year)
   } 
 
   return res.render("students/show", {student}) 
@@ -111,7 +112,8 @@ exports.update = function(req, res) {
     ...foundIdstudents,
     ... req.body,
     birth: Date.parse(req.body.birth),
-    id: Number(req.body.id)
+    id: Number(req.body.id),
+    school_year: grade(req.body.school_year)
   } 
 
   data.students[index] = student 
